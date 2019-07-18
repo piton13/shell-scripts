@@ -8,3 +8,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.bashrc
 version="nvm --version"
 exec "$version"
+
+# in case of some errors try to open new terminal and check version there
