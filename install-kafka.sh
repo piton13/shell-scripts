@@ -1,5 +1,8 @@
 #!/bin/bash
 
-# sudo apt-get update
-# wget http://mirrors.estointernet.in/apache/kafka/2.3.0/kafka_2.12-2.3.0.tgz -O ~/kafka.tgz
-tar xzf ~/kafka.tgz -C ~
+# get url from https://kafka.apache.org/downloads
+# url = http://apache.mirrors.lucidnetworks.net/kafka/2.4.0/kafka_2.13-2.4.0.tgz
+
+cd ~
+wget http://apache.mirrors.lucidnetworks.net/kafka/2.4.0/kafka_2.13-2.4.0.tgz
+tar -xvf kafka_2.13-2.4.0.tgz -C ~
