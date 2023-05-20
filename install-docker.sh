@@ -18,5 +18,10 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo apt  install docker.io
-echo "export DOCKER_HOST=localhost:2375" >> ~/.bashrc
+# echo "export DOCKER_HOST=localhost:2375" >> ~/.bashrc
+# docker run hello-world
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
 docker run hello-world
